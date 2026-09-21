@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# Generated model files
+models/*
+!models/.gitkeep
+*.pkl
+*.joblib
+*.h5
+
+# Datasets
+data/processed/*
+!data/processed/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+
+# Test and tool caches
+.pytest_cache/
+.coverage
