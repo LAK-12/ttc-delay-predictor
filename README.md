@@ -1,47 +1,42 @@
 # TTC Delay-Aware Route Planner
 
-This project explores using machine learning and historical TTC transit data to predict delays and eventually recommend more reliable routes and departure times.
+I use the TTC in Toronto almost every day, and one thing I’ve noticed is that the fastest route on paper is not always the route that gets you there on time.
+
+This project explores whether historical TTC delay data can be used to predict delays, compare route reliability, and eventually recommend the best route and departure time for a user.
+
+The main question behind the project is:
+
+**Which route is most likely to get you there on time?**
+
+## Why I’m Building This
+
+Since I rely on the TTC regularly, delays and unreliable travel times are a real problem I deal with. I wanted to use that everyday experience as the basis for a machine learning project and see whether historical patterns could help make trip planning more reliable.
 
 ## Goals
-- Predict expected TTC delay
-- Estimate delay risk
-- Compare reliability of alternative routes
-- Recommend departure times based on predicted reliability
 
-## Project Roadmap
-Phase 1: Exploratory data analysis
-Phase 2: Data cleaning and feature engineering
-Phase 3: Baseline delay prediction
-Phase 4: Model comparison and evaluation
-Phase 5: GTFS route generation
-Phase 6: Reliability-aware route ranking
-Phase 7: Real-time data and service alerts
-Phase 8: Optional RAG explanation layer
+- Predict TTC delay duration
+- Estimate the risk of a significant delay
+- Compare route reliability
+- Recommend when a user should leave based on their desired arrival time
 
-## Project Structure
-- `data/raw/`: Original TTC datasets.
-- `data/processed/`: Cleaned or transformed datasets.
-- `notebooks/`: Exploratory analysis notebooks.
-- `src/`: Project source packages for data, features, models, routing, and RAG.
-- `models/`: Generated model files.
-- `tests/`: Tests.
-- `config/`: Project configuration.
+## Tech Stack
 
-## Setup
-```bash
-python -m venv .venv
-```
+- Python
+- Pandas
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
 
-Windows:
-```bash
-.venv\Scripts\activate
-```
+## Roadmap
 
-macOS/Linux:
-```bash
-source .venv/bin/activate
-```
+1. Explore and clean TTC delay data
+2. Build baseline machine learning models
+3. Compare and evaluate model performance
+4. Add GTFS route and schedule data
+5. Rank routes using predicted delay risk
+6. Recommend departure times
+7. Later add real-time service alerts and optional RAG-based explanations
 
-```bash
-pip install -r requirements.txt
-```
+## Status
+
+Currently working on exploratory data analysis and preparing the data for the first prediction models.
