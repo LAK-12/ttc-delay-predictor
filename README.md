@@ -1,4 +1,4 @@
-# TTC Delay-Aware Route Planner
+# WiseCommute - ML-Powered TTC Delay & Route Reliability Planner
 
 I use the TTC in Toronto almost every day, and one thing I’ve noticed is that the fastest route on paper is not always the route that gets you there on time.
 
